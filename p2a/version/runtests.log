@@ -1,0 +1,333 @@
+starting build
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+rm -f wish
+Trying to build project using make
+make
+gcc -g -Wall -Werror wish.c -lm -o wish
+
+
+test build PASSED (5 of 5)
+ (build project using make)
+
+starting exit
+
+**********************************************************************
+
+Test exit
+run exit
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test exit PASSED (5 of 5)
+ (run exit)
+
+starting cd
+
+**********************************************************************
+
+Test cd
+cd with argument, and cd without argument
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test cd PASSED (5 of 5)
+ (cd with argument, and cd without argument)
+
+starting badcd
+
+**********************************************************************
+
+Test badcd
+cd to a bad directory
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+starting history
+
+**********************************************************************
+
+Test history
+test history without argument
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+Failure: ./wish gave incorrect standard output.
+Expected: "wish> Linux\nwish> _\na\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\nwish> wish> err\niloveos\nin\nout\nREADME\nwish> DO YOU?\nwish> uname\nls /u/ \ncd /u/c/s/cs537-1/tests/p2a/history\nls\ncat iloveos\nhistory\nwish> "
+Got:      "wish> Linux\nwish> _\na\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\nwish> wish> err\niloveos\nin\nout\nREADME\nwish> DO YOU?\nwish> wish> "
+
+
+test history FAILED (0 of 5)
+ (test history without argument)
+ ./wish gave incorrect standard output.
+
+ Test it yourself by running
+ wish </u/c/s/cs537-1/tests/p2a/history/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/history
+ to compare your output with reference outputs. 
+
+starting historyarg
+
+**********************************************************************
+
+Test historyarg
+test history with argument
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+Failure: ./wish gave incorrect standard output.
+Expected: "wish> Linux\nwish> _\na\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\nwish> wish> err\niloveos\nin\nout\nREADME\nwish> DO YOU?\nwish> cat iloveos\nhistory 2\nwish> wish> "
+Got:      "wish> Linux\nwish> _\na\nb\nc\nd\ne\nf\ng\nh\ni\nj\nk\nl\nm\nn\no\np\nq\nr\ns\nt\nu\nv\nw\nx\ny\nz\nwish> wish> err\niloveos\nin\nout\nREADME\nwish> DO YOU?\nwish> wish> wish> "
+
+
+test historyarg FAILED (0 of 5)
+ (test history with argument)
+ ./wish gave incorrect standard output.
+
+ Test it yourself by running
+ wish </u/c/s/cs537-1/tests/p2a/historyarg/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/historyarg
+ to compare your output with reference outputs. 
+
+starting exec
+
+**********************************************************************
+
+Test exec
+path should be /bin
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+starting badexec
+
+**********************************************************************
+
+Test badexec
+run programs that do not exist in /bin
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test badexec PASSED (10 of 10)
+ (run programs that do not exist in /bin)
+
+starting path
+
+**********************************************************************
+
+Test path
+run path and a program that exists in a given path
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test path PASSED (5 of 5)
+ (run path and a program that exists in a given path)
+
+starting path2
+
+**********************************************************************
+
+Test path2
+run path with a long pathname and many different paths
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test path2 PASSED (5 of 5)
+ (run path with a long pathname and many different paths)
+
+starting pip
+
+**********************************************************************
+
+Test pip
+simple piping
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+Failure: ./wish gave incorrect standard output.
+Expected: "wish> 1:this is a very very cheesy test to grep the OS \n3:there is two os here, os\n4:there should be 6 Os word in total\n7:os OS\nwish> "
+Got:      "wish> wish> "
+
+
+test pip FAILED (0 of 10)
+ (simple piping)
+ ./wish gave incorrect standard output.
+
+ Test it yourself by running
+ wish </u/c/s/cs537-1/tests/p2a/pip/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/pip
+ to compare your output with reference outputs. 
+
+starting line
+
+**********************************************************************
+
+Test line
+line with maximum allowed length
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test line PASSED (5 of 5)
+ (line with maximum allowed length)
+
+starting batch
+
+**********************************************************************
+
+Test batch
+test batch mode
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish /u/c/s/cs537-1/tests/p2a/batch/input
+
+
+test batch PASSED (5 of 5)
+ (test batch mode)
+
+starting badarg
+
+**********************************************************************
+
+Test badarg
+extra argument to wish
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish /extra
+
+
+test badarg PASSED (5 of 5)
+ (extra argument to wish)
+
+starting whitespace
+
+**********************************************************************
+
+Test whitespace
+leading and trailing whitespace, full whitespaces or empty string
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+starting rdr
+
+**********************************************************************
+
+Test rdr
+simple redirection with no standard error
+
+**********************************************************************
+/tmp/tmpQRdPvX/p/./wish
+
+
+test rdr PASSED (10 of 10)
+ (simple redirection with no standard error)
+
+**********************************************************************
+Summary:
+test build PASSED (5 of 5)
+ (build project using make)
+
+test exit PASSED (5 of 5)
+ (run exit)
+
+test cd PASSED (5 of 5)
+ (cd with argument, and cd without argument)
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+test history FAILED (0 of 5)
+ (test history without argument)
+ ./wish gave incorrect standard output.
+
+ Test it yourself by running
+ wish </u/c/s/cs537-1/tests/p2a/history/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/history
+ to compare your output with reference outputs. 
+
+test historyarg FAILED (0 of 5)
+ (test history with argument)
+ ./wish gave incorrect standard output.
+
+ Test it yourself by running
+ wish </u/c/s/cs537-1/tests/p2a/historyarg/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/historyarg
+ to compare your output with reference outputs. 
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+test badexec PASSED (10 of 10)
+ (run programs that do not exist in /bin)
+
+test path PASSED (5 of 5)
+ (run path and a program that exists in a given path)
+
+test path2 PASSED (5 of 5)
+ (run path with a long pathname and many different paths)
+
+test pip FAILED (0 of 10)
+ (simple piping)
+ ./wish gave incorrect standard output.
+
+ Test it yourself by running
+ wish </u/c/s/cs537-1/tests/p2a/pip/in
+ and check out the test folder
+ /u/c/s/cs537-1/tests/p2a/pip
+ to compare your output with reference outputs. 
+
+test line PASSED (5 of 5)
+ (line with maximum allowed length)
+
+test batch PASSED (5 of 5)
+ (test batch mode)
+
+test badarg PASSED (5 of 5)
+ (extra argument to wish)
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+test rdr PASSED (10 of 10)
+ (simple redirection with no standard error)
+
+Passed 13 of 16 tests.
+Overall 13 of 16
+Points 75 of 95

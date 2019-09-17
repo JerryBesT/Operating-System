@@ -1,0 +1,1 @@
+gcc -iquote ../include -Wall -Werror -g -o xcheck xcheck.c

@@ -1,0 +1,334 @@
+starting build
+
+**********************************************************************
+
+Test build
+build project using make
+
+**********************************************************************
+Trying to clean project using make clean
+make clean
+make: *** No rule to make target 'clean'.  Stop.
+Trying to build project using make
+make
+make: *** No targets specified and no makefile found.  Stop.
+gcc xcheck.c -o xcheck
+
+
+test build PASSED
+ (build project using make)
+
+starting Good
+
+**********************************************************************
+
+Test Good
+run on a good filesystem
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Good
+
+
+test Good PASSED (5 of 5)
+ (run on a good filesystem)
+
+starting Goodrefcnt
+
+**********************************************************************
+
+Test Goodrefcnt
+run on fs with only good reference counts
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Goodrefcnt
+
+
+test Goodrefcnt PASSED (2 of 2)
+ (run on fs with only good reference counts)
+
+starting Nonexistant
+
+**********************************************************************
+
+Test Nonexistant
+run on a nonexistant filesystem
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Nonexistant
+
+
+test Nonexistant PASSED (2 of 2)
+ (run on a nonexistant filesystem)
+
+starting Badroot
+
+**********************************************************************
+
+Test Badroot
+run on a filesystem with a root directory in bad location
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Badroot
+
+
+test Badroot PASSED (5 of 5)
+ (run on a filesystem with a root directory in bad location)
+
+starting Badinode
+
+**********************************************************************
+
+Test Badinode
+run on a filesystem with a bad type in an inode
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Badinode
+
+
+test Badinode PASSED (5 of 5)
+ (run on a filesystem with a bad type in an inode)
+
+starting Badaddr
+
+**********************************************************************
+
+Test Badaddr
+run on a filesystem with a bad direct address in an inode
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Badaddr
+
+
+test Badaddr PASSED (5 of 5)
+ (run on a filesystem with a bad direct address in an inode)
+
+starting Badindir1
+
+**********************************************************************
+
+Test Badindir1
+run on a filesystem with a bad indirect address in an inode
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Badindir1
+
+
+test Badindir1 PASSED (5 of 5)
+ (run on a filesystem with a bad indirect address in an inode)
+
+starting Badroot2
+
+**********************************************************************
+
+Test Badroot2
+run on a filesystem with a bad root directory in good location
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Badroot2
+
+
+test Badroot2 PASSED (5 of 5)
+ (run on a filesystem with a bad root directory in good location)
+
+starting Badfmt
+
+**********************************************************************
+
+Test Badfmt
+run on a filesystem without . or .. directories
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Badfmt
+
+
+test Badfmt PASSED (5 of 5)
+ (run on a filesystem without . or .. directories)
+
+starting Mrkfree
+
+**********************************************************************
+
+Test Mrkfree
+run on a filesystem with an inuse direct block marked free
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Mrkfree
+
+
+test Mrkfree PASSED (5 of 5)
+ (run on a filesystem with an inuse direct block marked free)
+
+starting Mrkused
+
+**********************************************************************
+
+Test Mrkused
+run on a filesystem with a free block marked used
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Mrkused
+
+
+test Mrkused PASSED (5 of 5)
+ (run on a filesystem with a free block marked used)
+
+starting Addronce
+
+**********************************************************************
+
+Test Addronce
+run on a filesystem with an address used more than once
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Addronce
+
+
+test Addronce PASSED (5 of 5)
+ (run on a filesystem with an address used more than once)
+
+starting Imrkused
+
+**********************************************************************
+
+Test Imrkused
+run with inode marked used, but not referenced in a directory
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Imrkused
+
+
+test Imrkused PASSED (5 of 5)
+ (run with inode marked used, but not referenced in a directory)
+
+starting Imrkfree
+
+**********************************************************************
+
+Test Imrkfree
+run with inode marked free, but referenced in a directory
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Imrkfree
+
+
+test Imrkfree PASSED (5 of 5)
+ (run with inode marked free, but referenced in a directory)
+
+starting Badrefcnt
+
+**********************************************************************
+
+Test Badrefcnt
+run on fs which has an inode with a bad reference count
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Badrefcnt
+
+
+test Badrefcnt PASSED (5 of 5)
+ (run on fs which has an inode with a bad reference count)
+
+starting Dironce
+
+**********************************************************************
+
+Test Dironce
+run on fs with a directory appearing more than once
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Dironce
+
+
+test Dironce PASSED (5 of 5)
+ (run on fs with a directory appearing more than once)
+
+starting Goodrm
+
+**********************************************************************
+
+Test Goodrm
+run on good fs with a file removed and a new directory created
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Goodrm
+
+
+test Goodrm PASSED (5 of 5)
+ (run on good fs with a file removed and a new directory created)
+
+starting Goodlink
+
+**********************************************************************
+
+Test Goodlink
+run on good fs with some hard links and a linked file removed
+
+**********************************************************************
+/tmp/tmpnanU66/p/./xcheck /u/c/s/cs537-1/tests/p5/images/Goodlink
+
+
+test Goodlink PASSED (3 of 3)
+ (run on good fs with some hard links and a linked file removed)
+
+**********************************************************************
+Summary:
+test build PASSED
+ (build project using make)
+
+test Good PASSED (5 of 5)
+ (run on a good filesystem)
+
+test Goodrefcnt PASSED (2 of 2)
+ (run on fs with only good reference counts)
+
+test Nonexistant PASSED (2 of 2)
+ (run on a nonexistant filesystem)
+
+test Badroot PASSED (5 of 5)
+ (run on a filesystem with a root directory in bad location)
+
+test Badinode PASSED (5 of 5)
+ (run on a filesystem with a bad type in an inode)
+
+test Badaddr PASSED (5 of 5)
+ (run on a filesystem with a bad direct address in an inode)
+
+test Badindir1 PASSED (5 of 5)
+ (run on a filesystem with a bad indirect address in an inode)
+
+test Badroot2 PASSED (5 of 5)
+ (run on a filesystem with a bad root directory in good location)
+
+test Badfmt PASSED (5 of 5)
+ (run on a filesystem without . or .. directories)
+
+test Mrkfree PASSED (5 of 5)
+ (run on a filesystem with an inuse direct block marked free)
+
+test Mrkused PASSED (5 of 5)
+ (run on a filesystem with a free block marked used)
+
+test Addronce PASSED (5 of 5)
+ (run on a filesystem with an address used more than once)
+
+test Imrkused PASSED (5 of 5)
+ (run with inode marked used, but not referenced in a directory)
+
+test Imrkfree PASSED (5 of 5)
+ (run with inode marked free, but referenced in a directory)
+
+test Badrefcnt PASSED (5 of 5)
+ (run on fs which has an inode with a bad reference count)
+
+test Dironce PASSED (5 of 5)
+ (run on fs with a directory appearing more than once)
+
+test Goodrm PASSED (5 of 5)
+ (run on good fs with a file removed and a new directory created)
+
+test Goodlink PASSED (3 of 3)
+ (run on good fs with some hard links and a linked file removed)
+
+Passed 19 of 19 tests.
+Overall 19 of 19
+Points 82 of 82
